@@ -11,6 +11,7 @@ import Alamofire
 class SpacesInteractor {
     
     func getSpaces(compeletion: @escaping (Result<[Space], Error>)-> Void){
+        
         guard let url = URL(string: "http://localhost:3000/spaces/") else{
             return
         }
@@ -21,6 +22,7 @@ class SpacesInteractor {
                 compeletion(.success(spaces))
             case .failure(let error):
                 compeletion(.failure(error))
+                print(error)
             }
         }
         

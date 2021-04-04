@@ -8,6 +8,8 @@
 import Foundation
 
 protocol SpacesView: class {
+    
+    var presenter: SpaceVCPresenter?{get set}
     func ShowIndicator()
     func hideIndicator()
     func fetchingDataSourse()
@@ -24,15 +26,24 @@ protocol SpaceCellView {
 
 class SpaceVCPresenter {
     private weak var view: SpacesView?
-    private let interactor = SpacesInteractor()
+    private let interactor : SpacesInteractor
     private var spaces = [Space]()
+    private let router: SpaceVCRouter
     
     func viewDidLoad(){
-        getSpaces()
+        OperationQueue.main.addOperation {
+            self.getSpaces()
+
+        }
+        self.view?.fetchingDataSourse()
     }
     
-    init(view: SpacesView) {
+    init(view: SpacesView?, interactor: SpacesInteractor, router: SpaceVCRouter) {
         self.view = view
+        self.interactor = interactor
+        self.router = router
+
+      
     }
     func getSpaces(){
         interactor.getSpaces { (result) in
@@ -44,6 +55,7 @@ class SpaceVCPresenter {
                 self.spaces = spaces
                 print(spaces.count)
                 self.view?.fetchingDataSourse()
+                
 
             case .failure(let error):
                 self.view?.hideIndicator()

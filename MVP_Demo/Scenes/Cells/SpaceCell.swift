@@ -26,6 +26,7 @@ class SpaceCell: UITableViewCell {
 }
 
 extension SpaceCell: SpaceCellView{
+    
     func displayCellName(name: String) {
         nameLabel.text = name
     }

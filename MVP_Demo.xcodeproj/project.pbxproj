@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0531D7E2261A288A0031DCD9 /* SpaceVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */; };
 		05FBFA2A2618B9D000EC5A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA292618B9D000EC5A03 /* AppDelegate.swift */; };
 		05FBFA2C2618B9D000EC5A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA2B2618B9D000EC5A03 /* SceneDelegate.swift */; };
 		05FBFA2E2618B9D100EC5A03 /* SpacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA2D2618B9D100EC5A03 /* SpacesVC.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceVCRouter.swift; sourceTree = "<group>"; };
 		05FBFA262618B9D000EC5A03 /* MVP_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FBFA292618B9D000EC5A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05FBFA2B2618B9D000EC5A03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0531D7E0261A28690031DCD9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		05FBFA1D2618B9D000EC5A03 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 		05FBFA3E2618B9E000EC5A03 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				0531D7E0261A28690031DCD9 /* Router */,
 				05FBFA482618BA9E00EC5A03 /* Spaces */,
 				05FBFA5A26192D3400EC5A03 /* Cells */,
 				05FBFA472618BA8A00EC5A03 /* Interactor */,
@@ -296,6 +307,7 @@
 				05FBFA2A2618B9D000EC5A03 /* AppDelegate.swift in Sources */,
 				05FBFA5D26192D6300EC5A03 /* SpaceCell.swift in Sources */,
 				05FBFA2C2618B9D000EC5A03 /* SceneDelegate.swift in Sources */,
+				0531D7E2261A288A0031DCD9 /* SpaceVCRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
