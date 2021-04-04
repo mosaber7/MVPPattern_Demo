@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0531D7E2261A288A0031DCD9 /* SpaceVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */; };
+		055CF46F261A80400037320C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBFA2F2618B9D100EC5A03 /* Main.storyboard */; };
 		05FBFA2A2618B9D000EC5A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA292618B9D000EC5A03 /* AppDelegate.swift */; };
 		05FBFA2C2618B9D000EC5A03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA2B2618B9D000EC5A03 /* SceneDelegate.swift */; };
 		05FBFA2E2618B9D100EC5A03 /* SpacesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA2D2618B9D100EC5A03 /* SpacesVC.swift */; };
-		05FBFA312618B9D100EC5A03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBFA2F2618B9D100EC5A03 /* Main.storyboard */; };
 		05FBFA332618B9D100EC5A03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05FBFA322618B9D100EC5A03 /* Assets.xcassets */; };
 		05FBFA362618B9D100EC5A03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBFA342618B9D100EC5A03 /* LaunchScreen.storyboard */; };
 		05FBFA432618BA2400EC5A03 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA422618BA2400EC5A03 /* User.swift */; };
@@ -246,7 +246,7 @@
 				05FBFA362618B9D100EC5A03 /* LaunchScreen.storyboard in Resources */,
 				05FBFA332618B9D100EC5A03 /* Assets.xcassets in Resources */,
 				05FBFA5E26192D6300EC5A03 /* SpaceCell.xib in Resources */,
-				05FBFA312618B9D100EC5A03 /* Main.storyboard in Resources */,
+				055CF46F261A80400037320C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

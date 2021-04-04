@@ -11,9 +11,11 @@ import UIKit
 class SpaceVCRouter{
     
     
-    class func createSpaceVC() -> UIViewController{
+    class func createSpaceVC() -> UINavigationController{
+         
+        let spacesVC =  mainStoryboard.instantiateViewController(identifier: "SpacesVC")
+        let navigationController = UINavigationController(rootViewController: spacesVC)
         
-        let navigationController = mainStoryboard.instantiateViewController(identifier: "UINavigationController")
         guard let spaceView = navigationController.children.first as? SpacesView else{
             fatalError("can't find spaceView")
         }

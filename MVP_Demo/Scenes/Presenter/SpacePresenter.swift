@@ -46,6 +46,7 @@ class SpaceVCPresenter {
       
     }
     func getSpaces(){
+        print("Here")
         interactor.getSpaces { (result) in
             self.view?.ShowIndicator()
             switch result{

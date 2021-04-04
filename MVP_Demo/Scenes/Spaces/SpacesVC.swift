@@ -16,8 +16,10 @@ class SpacesVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        title = "Hello!"
         tableView.register(UINib(nibName: "SpaceCell", bundle: nil), forCellReuseIdentifier: "SpaceCell")
-        title = "Spaces2"
+        self.presenter?.getSpaces()
+        
        // presenter = SpaceVCPresenter(view: self)
             self.presenter?.viewDidLoad()
 
