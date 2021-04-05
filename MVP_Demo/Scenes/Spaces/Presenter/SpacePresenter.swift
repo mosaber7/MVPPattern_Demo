@@ -77,7 +77,7 @@ class SpaceVCPresenter {
     }
     
     func didSelectRow(at index: Int){
-        SpaceVCRouter.navigateTodetailsVC()
+        SpaceVCRouter.navigateTodetailsVC(from: view,space: spaces[index])
     }
     
     

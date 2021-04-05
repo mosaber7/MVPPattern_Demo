@@ -39,18 +39,66 @@
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="88.392857142857139"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="S1D-v6-2Tp">
+        <!--Details SpaceVC-->
+        <scene sceneID="amU-V5-JNb">
             <objects>
-                <viewController id="Lz2-6t-xda" sceneMemberID="viewController">
-                    <imageView key="view" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" catalog="system" id="1eO-vt-Fjk">
+                <viewController storyboardIdentifier="DetailsVC" id="k6v-zD-p0M" customClass="DetailsSpaceVC" customModule="MVP_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="593-cW-S6Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </imageView>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqb-qM-3bF">
+                                <rect key="frame" x="36" y="80" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aGk-LS-fGm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZZ-7s-O6E">
+                                <rect key="frame" x="36" y="166" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bLi-VS-aiY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-S4-sKb">
+                                <rect key="frame" x="36" y="252" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="J2F-Ah-uec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eQx-W2-htY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wvf-S4-sKb" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="1hX-Dn-EqZ"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="kZZ-7s-O6E" secondAttribute="trailing" constant="36" id="2j1-mk-KBF"/>
+                            <constraint firstItem="rqb-qM-3bF" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="4US-cf-t6a"/>
+                            <constraint firstItem="kZZ-7s-O6E" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="5zG-j2-eL6"/>
+                            <constraint firstItem="rqb-qM-3bF" firstAttribute="top" secondItem="eQx-W2-htY" secondAttribute="top" constant="36" id="8zS-D8-9w5"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="rqb-qM-3bF" secondAttribute="trailing" constant="36" id="JfE-fW-Idr"/>
+                            <constraint firstItem="kZZ-7s-O6E" firstAttribute="top" secondItem="rqb-qM-3bF" secondAttribute="bottom" constant="36" id="MJ3-ZF-Ftw"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="wvf-S4-sKb" secondAttribute="trailing" constant="36" id="ZtR-ri-dei"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="bottom" secondItem="wvf-S4-sKb" secondAttribute="bottom" constant="560" id="n7r-iH-Cah"/>
+                            <constraint firstItem="wvf-S4-sKb" firstAttribute="top" secondItem="kZZ-7s-O6E" secondAttribute="bottom" constant="36" id="yts-hX-0A1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationLabel" destination="wvf-S4-sKb" id="CFT-ur-8x0"/>
+                        <outlet property="nameLabel" destination="rqb-qM-3bF" id="E8t-vG-Abs"/>
+                        <outlet property="priceLabel" destination="kZZ-7s-O6E" id="Zmv-uq-qpi"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vTm-Nd-DMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHQ-bE-M2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1899" y="90"/>
+            <point key="canvasLocation" x="1855" y="14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fPa-gb-vNq">
@@ -72,7 +120,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="checkmark" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

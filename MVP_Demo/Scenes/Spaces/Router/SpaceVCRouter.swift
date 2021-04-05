@@ -31,7 +31,12 @@ class SpaceVCRouter{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    class func navigateTodetailsVC(){
-        print("Doone")
+    class func navigateTodetailsVC(from view: SpacesView?,space: Space){
+        let detailsView = DetailsSpaceVCRouter.createDetailsVCRouter(space:space)
+        
+        if let viewController = view as? UIViewController{
+            viewController.navigationController?.pushViewController(detailsView, animated: true)
+        }
+
     }
 }

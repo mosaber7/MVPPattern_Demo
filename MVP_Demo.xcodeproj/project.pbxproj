@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0506A00A261B5473005A282D /* DetailsSpaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506A009261B5473005A282D /* DetailsSpaceVC.swift */; };
+		0506A012261B55CF005A282D /* DetailsSpceVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506A011261B55CF005A282D /* DetailsSpceVCRouter.swift */; };
+		0506A015261B560D005A282D /* DetailsVCPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0506A014261B560D005A282D /* DetailsVCPresenter.swift */; };
 		0531D7E2261A288A0031DCD9 /* SpaceVCRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */; };
 		055CF46F261A80400037320C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05FBFA2F2618B9D100EC5A03 /* Main.storyboard */; };
 		05FBFA2A2618B9D000EC5A03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05FBFA292618B9D000EC5A03 /* AppDelegate.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0506A009261B5473005A282D /* DetailsSpaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSpaceVC.swift; sourceTree = "<group>"; };
+		0506A011261B55CF005A282D /* DetailsSpceVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSpceVCRouter.swift; sourceTree = "<group>"; };
+		0506A014261B560D005A282D /* DetailsVCPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVCPresenter.swift; sourceTree = "<group>"; };
 		0531D7E1261A288A0031DCD9 /* SpaceVCRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceVCRouter.swift; sourceTree = "<group>"; };
 		05FBFA262618B9D000EC5A03 /* MVP_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05FBFA292618B9D000EC5A03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +62,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0506A00C261B54F7005A282D /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0506A010261B5563005A282D /* Router */,
+				0506A00F261B554A005A282D /* Presenter */,
+				0506A00E261B553A005A282D /* ViewControllers */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		0506A00D261B550D005A282D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				05FBFA2D2618B9D100EC5A03 /* SpacesVC.swift */,
+				05FBFA56261927E800EC5A03 /* SpacesVC+SpacesView.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0506A00E261B553A005A282D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0506A009261B5473005A282D /* DetailsSpaceVC.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		0506A00F261B554A005A282D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0506A014261B560D005A282D /* DetailsVCPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0506A010261B5563005A282D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				0506A011261B55CF005A282D /* DetailsSpceVCRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		0531D7E0261A28690031DCD9 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,11 +147,8 @@
 		05FBFA3E2618B9E000EC5A03 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				0531D7E0261A28690031DCD9 /* Router */,
+				0506A00C261B54F7005A282D /* Details */,
 				05FBFA482618BA9E00EC5A03 /* Spaces */,
-				05FBFA5A26192D3400EC5A03 /* Cells */,
-				05FBFA472618BA8A00EC5A03 /* Interactor */,
-				05FBFA462618BA7E00EC5A03 /* Presenter */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -152,8 +198,11 @@
 		05FBFA482618BA9E00EC5A03 /* Spaces */ = {
 			isa = PBXGroup;
 			children = (
-				05FBFA2D2618B9D100EC5A03 /* SpacesVC.swift */,
-				05FBFA56261927E800EC5A03 /* SpacesVC+SpacesView.swift */,
+				05FBFA5A26192D3400EC5A03 /* Cells */,
+				05FBFA472618BA8A00EC5A03 /* Interactor */,
+				05FBFA462618BA7E00EC5A03 /* Presenter */,
+				0531D7E0261A28690031DCD9 /* Router */,
+				0506A00D261B550D005A282D /* ViewControllers */,
 			);
 			path = Spaces;
 			sourceTree = "<group>";
@@ -301,12 +350,15 @@
 			files = (
 				05FBFA432618BA2400EC5A03 /* User.swift in Sources */,
 				05FBFA4C2618BB1100EC5A03 /* SpacesInteractor.swift in Sources */,
+				0506A015261B560D005A282D /* DetailsVCPresenter.swift in Sources */,
 				05FBFA57261927E800EC5A03 /* SpacesVC+SpacesView.swift in Sources */,
 				05FBFA2E2618B9D100EC5A03 /* SpacesVC.swift in Sources */,
+				0506A00A261B5473005A282D /* DetailsSpaceVC.swift in Sources */,
 				05FBFA542618BDEC00EC5A03 /* SpacePresenter.swift in Sources */,
 				05FBFA2A2618B9D000EC5A03 /* AppDelegate.swift in Sources */,
 				05FBFA5D26192D6300EC5A03 /* SpaceCell.swift in Sources */,
 				05FBFA2C2618B9D000EC5A03 /* SceneDelegate.swift in Sources */,
+				0506A012261B55CF005A282D /* DetailsSpceVCRouter.swift in Sources */,
 				0531D7E2261A288A0031DCD9 /* SpaceVCRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
