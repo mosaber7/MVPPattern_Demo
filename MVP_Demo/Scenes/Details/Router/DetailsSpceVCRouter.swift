@@ -27,4 +27,13 @@ class DetailsSpaceVCRouter {
         UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+    class func navigateToExtraVC(from view: DetailsView,space: Space){
+        let extraVC = ExtraRouter.createExtrVC(space: space)
+        if let ExtraViewVC = view as? UIViewController{
+            ExtraViewVC.navigationController?.pushViewController(extraVC, animated: true)
+        }
+        
+        
+    }
+    
 }

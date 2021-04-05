@@ -19,7 +19,11 @@ class DetailsSpaceVC: UIViewController {
 
     }
     
-
+    @IBAction func tap(_ sender: UIButton) {
+        presenter?.extraTapped()
+    }
+    
+    
 
 }
 

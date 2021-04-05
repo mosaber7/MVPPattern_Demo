@@ -30,6 +30,11 @@ class DetailsVCPresenter{
         detailsVc?.displayCellLocation(location: space.address)
     }
     
+    func extraTapped(){
+        DetailsSpaceVCRouter.navigateToExtraVC(from: detailsVc!, space: space)
+        print("ExtraTapped")
+    }
+    
     
     
     

@@ -74,6 +74,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irK-ar-cQm">
+                                <rect key="frame" x="36" y="776" width="342" height="50"/>
+                                <color key="backgroundColor" red="0.60392156860000001" green="0.60392156860000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xvR-Ix-sLq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tap:" destination="k6v-zD-p0M" eventType="touchUpInside" id="bYM-Ii-Rqf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eQx-W2-htY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -82,11 +93,13 @@
                             <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="kZZ-7s-O6E" secondAttribute="trailing" constant="36" id="2j1-mk-KBF"/>
                             <constraint firstItem="rqb-qM-3bF" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="4US-cf-t6a"/>
                             <constraint firstItem="kZZ-7s-O6E" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="5zG-j2-eL6"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="bottom" secondItem="irK-ar-cQm" secondAttribute="bottom" constant="36" id="8xL-Pa-CGk"/>
                             <constraint firstItem="rqb-qM-3bF" firstAttribute="top" secondItem="eQx-W2-htY" secondAttribute="top" constant="36" id="8zS-D8-9w5"/>
                             <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="rqb-qM-3bF" secondAttribute="trailing" constant="36" id="JfE-fW-Idr"/>
                             <constraint firstItem="kZZ-7s-O6E" firstAttribute="top" secondItem="rqb-qM-3bF" secondAttribute="bottom" constant="36" id="MJ3-ZF-Ftw"/>
+                            <constraint firstItem="irK-ar-cQm" firstAttribute="leading" secondItem="eQx-W2-htY" secondAttribute="leading" constant="36" id="V17-HU-Y3l"/>
                             <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="wvf-S4-sKb" secondAttribute="trailing" constant="36" id="ZtR-ri-dei"/>
-                            <constraint firstItem="eQx-W2-htY" firstAttribute="bottom" secondItem="wvf-S4-sKb" secondAttribute="bottom" constant="560" id="n7r-iH-Cah"/>
+                            <constraint firstItem="eQx-W2-htY" firstAttribute="trailing" secondItem="irK-ar-cQm" secondAttribute="trailing" constant="36" id="oOw-xy-y72"/>
                             <constraint firstItem="wvf-S4-sKb" firstAttribute="top" secondItem="kZZ-7s-O6E" secondAttribute="bottom" constant="36" id="yts-hX-0A1"/>
                         </constraints>
                     </view>
@@ -99,6 +112,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHQ-bE-M2l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1855" y="14"/>
+        </scene>
+        <!--Extra View Controller-->
+        <scene sceneID="Iel-9n-oEQ">
+            <objects>
+                <viewController storyboardIdentifier="ExtraVC" id="kmF-KU-qqz" customClass="ExtraViewController" customModule="MVP_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tYC-HY-F8y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V37-6M-Mw1">
+                                <rect key="frame" x="36" y="423" width="342" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9VN-Uc-IkL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hbQ-2J-nXk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="V37-6M-Mw1" firstAttribute="centerY" secondItem="tYC-HY-F8y" secondAttribute="centerY" id="V4V-Ac-pc8"/>
+                            <constraint firstItem="hbQ-2J-nXk" firstAttribute="trailing" secondItem="V37-6M-Mw1" secondAttribute="trailing" constant="36" id="Zms-fW-xAm"/>
+                            <constraint firstItem="V37-6M-Mw1" firstAttribute="leading" secondItem="hbQ-2J-nXk" secondAttribute="leading" constant="36" id="f0s-0V-nLD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameLAbel" destination="V37-6M-Mw1" id="zzL-Bb-p0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qka-Vv-mUQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2819" y="45"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fPa-gb-vNq">
