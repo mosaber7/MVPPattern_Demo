@@ -76,5 +76,9 @@ class SpaceVCPresenter {
         cell.displayCellPrice(price: space.price)
     }
     
+    func didSelectRow(at index: Int){
+        SpaceVCRouter.navigateTodetailsVC()
+    }
+    
     
 }

@@ -30,4 +30,8 @@ class SpaceVCRouter{
     class var mainStoryboard: UIStoryboard{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
+    
+    class func navigateTodetailsVC(){
+        print("Doone")
+    }
 }
