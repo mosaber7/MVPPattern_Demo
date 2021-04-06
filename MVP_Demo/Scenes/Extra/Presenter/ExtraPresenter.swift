@@ -28,5 +28,9 @@ class ExtraPresenter{
         extraView?.displayName(name: space.name)
     }
     
+    func locationTapped(){
+        ExtraRouter.navigateToLocationVC(from: extraView!, space: space)
+    }
+    
     
 }

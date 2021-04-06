@@ -32,7 +32,6 @@ class DetailsVCPresenter{
     
     func extraTapped(){
         DetailsSpaceVCRouter.navigateToExtraVC(from: detailsVc!, space: space)
-        print("ExtraTapped")
     }
     
     

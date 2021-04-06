@@ -24,6 +24,17 @@ class ExtraRouter{
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+    class func navigateToLocationVC(from view: ExtraView,space: Space){
+        
+        let locationVC = LocationVCRouter.createLocationVC(space: space)
+        
+        if let extraView = view as? UIViewController{
+            extraView.navigationController?.pushViewController(locationVC, animated: true)
+        }
+        
+        
+    }
+    
     
     
 }

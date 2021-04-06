@@ -19,6 +19,9 @@ class ExtraViewController: UIViewController {
         presenter?.viewDidLoad()
 
     }
+    @IBAction func locationTapped(_ sender: Any) {
+        presenter?.locationTapped()
+    }
     
 
 }
